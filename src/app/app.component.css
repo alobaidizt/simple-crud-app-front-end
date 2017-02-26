@@ -1,0 +1,89 @@
+.inputs-form div label, .preview div label {
+  color:     rgba(49,154,148,0.7);
+  min-width: 110px;
+}
+
+.inputs-form div, .preview div {
+  display:        flex;
+  text-transform: uppercase;
+}
+
+.inputs-form, .preview {
+  width: 50%;
+}
+
+.preview {
+  float: right;
+}
+
+.container {
+  display: flex;
+  margin:  10px
+}
+
+.preview div label.input-preview {
+  color:          rgba(223,44,86,0.5);
+  text-transform: none;
+}
+
+input, h1, h2 {
+  color: rgba(112,141,145,0.8);
+}
+
+input {
+    background:    transparent;
+    border:        none;
+    border-bottom: 1px dashed #83A4C5;
+    width:         150px;
+    outline:       none;
+    padding:       0px 0px 0px 0px;
+}
+
+h1, .contacts-title {
+  text-align: center;
+  margin:     10px auto;
+}
+
+button {
+  background:    rgba(97,253,215,1);
+  border:        none;
+  padding:       8px 10px 8px 10px;
+  border-radius: 5px;
+  color:         rgba(223,44,86,0.5);
+  font-weight:   bold
+}
+
+button:hover {
+  background: rgba(97,253,215,0.4);
+}
+
+table {
+    border-collapse:       collapse;
+    margin:                auto;
+    width:                 50%;
+    border:                1px solid #CCCCCC;
+    border-radius:         6px 6px 6px 6px;
+    -moz-border-radius:    6px 6px 6px 6px;
+    -webkit-border-radius: 6px 6px 6px 6px;
+    box-shadow:            0 1px 1px #CCCCCC;
+}
+
+td {
+  color: rgba(223,44,86,1);
+}
+
+th, td {
+    text-align: center;
+    padding:    8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+td {
+  cursor: default;
+}
+
+th {
+  background: rgba(97,253,215,1);
+  color:      rgba(49,154,148,0.7);
+}
