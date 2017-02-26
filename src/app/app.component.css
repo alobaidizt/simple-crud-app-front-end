@@ -45,6 +45,11 @@ h1, .contacts-title {
 }
 
 button {
+  margin: 10px 5px;
+  cursor: pointer;
+}
+
+button.primary {
   background:    rgba(97,253,215,1);
   border:        none;
   padding:       8px 10px 8px 10px;
@@ -53,8 +58,21 @@ button {
   font-weight:   bold
 }
 
-button:hover {
+button.primary:hover {
   background: rgba(97,253,215,0.4);
+}
+
+button.danger {
+  background:    rgba(223,44,86,1);
+  border:        none;
+  padding:       8px 10px 8px 10px;
+  border-radius: 5px;
+  color:         rgba(97,253,215,10.5);
+  font-weight:   bold
+}
+
+button.danger:hover {
+  background: rgba(223,44,86,0.4);
 }
 
 table {

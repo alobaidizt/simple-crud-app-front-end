@@ -44,6 +44,13 @@ export class AppComponent implements OnInit {
     this.contact.clear()
   }
 
+  clearAll(): void {
+    this.contactService.deleteContacts()
+      .then(
+        contacts => this.contacts = contacts,
+        error    => this.errorMessage = <any>error);
+  }
+
   contactSelected(contact: Contact): void {
     this.selectedContact = contact;
   }

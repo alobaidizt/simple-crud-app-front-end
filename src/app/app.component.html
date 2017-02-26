@@ -20,9 +20,13 @@
       <input [(ngModel)]="contact.address" placeholder="address..">
     </div>
 
-    <button type="button" class="btn btn-primary"
+    <button type="button" class="btn primary"
         (click)="addContact(contact)">
       Add Contact
+    </button>
+    <button type="button" class="btn danger"
+        (click)="clearAll()">
+      Delete All
     </button>
   </div>
 

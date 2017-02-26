@@ -17,6 +17,15 @@ export class ContactService {
                     .catch(this.handleError);
   }
 
+  deleteContacts (): Promise<Contact[]> {
+    let headers = new Headers({ 'Content-Type': 'application/json' });
+    let options = new RequestOptions({ headers: headers });
+    return this.http.delete(this.contactsUrl, options)
+                    .toPromise()
+                    .then(this.extractData)
+                    .catch(this.handleError);
+  }
+
   addContact (contact: Contact): Promise<Contact> {
     let headers = new Headers({ 'Content-Type': 'application/json' });
     let options = new RequestOptions({ headers: headers });
